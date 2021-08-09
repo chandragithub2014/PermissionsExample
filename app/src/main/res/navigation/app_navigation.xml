@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/cameraPermissionsFragment">
+
+    <fragment
+        android:id="@+id/cameraPermissionsFragment"
+        android:name="com.android.permissionsexample.CameraPermissionsFragment"
+        android:label="fragment_camera_permissions"
+        tools:layout="@layout/fragment_camera_permissions" >
+        <action
+            android:id="@+id/action_cameraPermissionsFragment_to_readWriteContactsFragment"
+            app:destination="@id/readWriteContactsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/readWriteContactsFragment"
+        android:name="com.android.permissionsexample.ReadWriteContactsFragment"
+        android:label="fragment_read_write_contacts"
+        tools:layout="@layout/fragment_read_write_contacts" />
+</navigation>
